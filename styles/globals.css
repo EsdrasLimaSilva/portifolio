@@ -1,26 +1,44 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  --white: #fdfdfd;
+  --gray: #f5f5f5;
+  --blue: #1e70eb;
+  --darkBlue: #1f3258;
+  --black: #222;
+  --transparent: #22222230;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+  scroll-behavior: smooth;
+}
+
+ul#skills-list > li {
+  background-color: var(--blue);
+  padding: 4px 12px;
+  color: var(--white);
+  text-align: center;
+  border-radius: 8px;
+  user-select: none;
+  transition: background-color 0.3s;
+  box-shadow: 1px 2px 2px var(--transparent);
+  width: 200px;
+}
+
+ul#skills-list > li:hover {
+  background-color: var(--gray);
+  color: var(--blue);
+  /* border: 2px solid var(--black); */
+  border-inline: 2px solid var(--blue);
 }
