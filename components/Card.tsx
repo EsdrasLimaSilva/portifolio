@@ -16,7 +16,7 @@ export default function Card({
   linkText,
 }: Props) {
   return (
-    <div className="w-[300px] h-[400px] flex flex-col items-center gap-6 bg-gray shadow-md rounded-lg pb-4 text-darkblue relative">
+    <div className="w-[300px] h-[380px] flex flex-col items-center relative bg-gray gap-4 rounded-lg shadow-md">
       <picture>
         <img
           src={bannerSource}
@@ -25,21 +25,21 @@ export default function Card({
           className="rounded-t-lg"
         />
       </picture>
-      <h2 className="font-bold text-2xl">{projectTitle}</h2>
-      <ul className="flex flex-row gap-2 items-center">
+      <h2>{projectTitle}</h2>
+      <ul className="flex flex-row gap-4">
         {icons.map((icon) => (
-          <li className="w-[30px]">
+          <li key={icon} className="w-[30px]">
             <img src={icon} alt="icon" />
           </li>
         ))}
       </ul>
-      <p className="w-[90%] text-center">{projectDescription}</p>
+      <p>{projectDescription}</p>
 
       <a
         href={projectUrl}
         target="_blank"
         rel="noreferrer"
-        className="w-1/2 bg-blue text-white text-center font-bold rounded-full hover:bg-white hover:text-blue border-[0.5px] transition-all absolute bottom-[10px]"
+        className="w-1/2 text-center bg-blue text-white rounded-full absolute bottom-3 font-bold"
       >
         {linkText}
       </a>

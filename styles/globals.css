@@ -22,8 +22,10 @@ html {
   background-color: var(--white);
   color: var(--black);
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
-
+/* 
 ul#skills-list > li {
   background-color: var(--blue);
   padding: 4px 12px;
@@ -34,11 +36,11 @@ ul#skills-list > li {
   transition: background-color 0.3s;
   box-shadow: 1px 2px 2px var(--transparent);
   width: 200px;
-}
+  font-size: 1rem;
+} */
 
 ul#skills-list > li:hover {
   background-color: var(--gray);
   color: var(--blue);
-  /* border: 2px solid var(--black); */
   border-inline: 2px solid var(--blue);
 }

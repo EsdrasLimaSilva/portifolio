@@ -16,28 +16,45 @@ export default function Home() {
       </Head>
       <main>
         {/* Page's header */}
-        <header className="flex fle-row justify-between items-center bg-gray py-4 px-8 gap-4">
+        <header className="w-screen bg-gray text-darkblue px-2 py-4 flex flex-row justify-between fixed z-10 sm:text-xl sm:py-8 md:px-8">
           {/* social and control */}
-          <span className="flex flex-row">
+          <span className="flex flex-row w-full justify-between items-center sm:w-fit sm:gap-4">
             <select
               name="languages"
               id="languages"
-              className="mr-8 px-5 rounded-md bg-darkblue text-white outline-none"
               defaultValue="english"
               onChange={(e) => handleLanguageChange(e)}
+              className="outline-none bg-transparent border-none sm:text-md"
             >
               <option value="Portuguese">PT-BR</option>
               <option value="english">EN-US</option>
             </select>
-            <span className="flex flex-row gap-4">
-              <img src="./linkedin-icon.png" alt="linkedin-icon" width="30px" />
-              <img src="./github-icon.png" alt="github-icon" width="30px" />
+
+            <span className="flex flex-row items-center gap-2">
+              <a
+                href="https://linkedin.com/in/esdras-silva-frontend"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./linkedin-icon.png"
+                  alt="linkedin-icon"
+                  width="30px"
+                />
+              </a>
+              <a
+                href="https://github.com/EsdrasLimaSilva"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="./github-icon.png" alt="github-icon" width="30px" />
+              </a>
             </span>
           </span>
 
           {/* Navigation */}
-          <nav>
-            <ul className="flex flex-row gap-8 text-lg font-bold text-darkblue">
+          <nav className="hidden sm:block">
+            <ul className="flex flex-row gap-4 md:gap-8">
               <li>
                 <a href="#home-section">
                   {language == "english" ? "home" : "início"}
@@ -62,40 +79,36 @@ export default function Home() {
           </nav>
         </header>
 
+        {/* Home section */}
         <section
           id="home-section"
-          className="flex min-h-screen flex-row justify-center items-center gap-64"
+          className="min-h-screen flex flex-col items-center justify-center gap-12 sm:flex-row md:gap-32"
         >
           <span>
-            <h1 className="text-5xl w-[450px] leading-[56px]">
-              {language === "english" ? "Hi i'm " : `Olá, me chamo `}
+            <h1 className="text-3xl sm:text-4xl">
+              {language === "english" ? "Hi i'm " : `Oi, sou `}
               <strong className="text-blue">Esdras Silva</strong>
             </h1>
-            <h2 className="text-md font-extralight text-2xl">
+            <h2 className="text-xl sm:text-2xl">
               {language === "english"
                 ? "Front-end developer"
                 : "Desenvolvedor front-end"}
             </h2>
           </span>
 
-          <img
-            src="./perfil.png"
-            alt="#"
-            width={200}
-            className="rounded-full"
-          />
+          <img src="./perfil.png" alt="#" width={200} className="rounded-3xl" />
         </section>
 
         {/* About me Section */}
         <section
           id="about-section"
-          className="flex min-h-screen flex-col justify-start items-start gap-28 bg-blue px-12 py-8 text-white"
+          className="py-28 px-4 flex flex-col gap-16 text-justify text-white bg-blue min-h-screen"
         >
-          <h3 className="text-3xl">
+          <h3 className=" text-2xl sm:text-3xl">
             {language === "english" ? "About me" : "Sobre mim"}
           </h3>
 
-          <div className="max-w-3xl mx-auto text-justify text-xl flex flex-col gap-8 leading-8">
+          <div className="flex flex-col mx-auto items-center gap-8 text-md leading-7 max-w-5xl  sm:text-xl sm:leading-10">
             <p>
               {language == "english"
                 ? "Hi, glad to see you here! My name is Esdras Silva I am a front-end developer and I study systems analysis and development at the Federal Institute of Science and Technology of Paraíba"
@@ -119,18 +132,18 @@ export default function Home() {
         {/* Skills Section */}
         <section
           id="skills-section"
-          className=" flex min-h-screen flex-col justify-start items-start gap-28 px-12 py-8 text-dark-blue"
+          className="min-h-screen flex flex-col justity-center py-28 px-4 gap-16 sm:gap-32"
         >
-          <h3 className="text-3xl text-darkblue">
+          <h3 className="text-darkblue text-2xl sm:text-3xl">
             {language === "english" ? "Skills" : "Habilidades"}
           </h3>
 
-          <div className="max-w-3xl mx-auto text-justify text-xl flex flex-col gap-8 leading-8">
+          <div className="mx-auto">
             <ul
               id="skills-list"
-              className="grid grid-cols-3 p-2 gap-11 gap-x-20"
+              className="grid grid-cols-1 gap-8 mx-auto  [&>li]:bg-blue [&>li]:rounded-lg [&>li]:py-2 [&>li]:text-white [&>li]:text-center [&>li]:w-80 :bg-blue sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
             >
-              <li className="">HTML</li>
+              <li>HTML</li>
               <li>CSS</li>
               <li>Javascript</li>
               <li>Typescript</li>
@@ -146,13 +159,13 @@ export default function Home() {
         {/* Projects Section */}
         <section
           id="projects-section"
-          className=" flex min-h-screen flex-col justify-start items-start gap-28 px-12 py-8 pb-32 text-dark-blue"
+          className="min-h-screen flex flex-col justity-center py-28 px-4 gap-16"
         >
-          <h3 className="text-3xl text-darkblue">
+          <h3 className="text-darkblue text-2xl sm:text-3xl">
             {language === "english" ? "Projects" : "Projetos"}
           </h3>
 
-          <div className="flex flex-row w-full gap-4 justify-center">
+          <div className="flex flex-col gap-8 w-full items-center sm:flex-row sm:flex-wrap sm:justify-center">
             <Card
               bannerSource="./picture-aquarium.png"
               projectTitle="Aquarium"

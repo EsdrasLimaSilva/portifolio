@@ -12,6 +12,11 @@ module.exports = {
         blue: "#1E70EB",
         darkblue: "#1F3258",
         black: "#222",
+        bluetrans: "#1E70EB90",
+      },
+
+      screens: {
+        lg: "1000px",
       },
     },
   },
