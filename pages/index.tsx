@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { ChangeEvent, useState } from "react";
 import Card from "../components/Card";
+import Skill from "../components/Skill";
 
 export default function Home() {
   const [language, setLanguage] = useState("english");
@@ -54,7 +55,7 @@ export default function Home() {
 
           {/* Navigation */}
           <nav className="hidden sm:block">
-            <ul className="flex flex-row gap-4 md:gap-8">
+            <ul className="flex flex-row gap-4 md:gap-8 font-semibold">
               <li>
                 <a href="#home-section">
                   {language == "english" ? "home" : "início"}
@@ -102,13 +103,13 @@ export default function Home() {
         {/* About me Section */}
         <section
           id="about-section"
-          className="py-28 px-4 flex flex-col gap-16 text-justify text-white bg-blue min-h-screen"
+          className="py-48 px-4 flex flex-col gap-16 text-justify text-white bg-blue min-h-screen"
         >
           <h3 className=" text-2xl sm:text-3xl">
             {language === "english" ? "About me" : "Sobre mim"}
           </h3>
 
-          <div className="flex flex-col mx-auto items-center gap-8 text-md leading-7 max-w-5xl  sm:text-xl sm:leading-10">
+          <div className="flex flex-col mx-auto items-center gap-8 text-md leading-7 max-w-5xl [&>p]:w-full  sm:text-xl sm:leading-10">
             <p>
               {language == "english"
                 ? "Hi, glad to see you here! My name is Esdras Silva I am a front-end developer and I study systems analysis and development at the Federal Institute of Science and Technology of Paraíba"
@@ -141,17 +142,17 @@ export default function Home() {
           <div className="mx-auto">
             <ul
               id="skills-list"
-              className="grid grid-cols-1 gap-8 mx-auto  [&>li]:bg-blue [&>li]:rounded-lg [&>li]:py-2 [&>li]:text-white [&>li]:text-center [&>li]:w-80 :bg-blue sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
+              className="grid grid-cols-1 gap-8 mx-aut :bg-blue sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
             >
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>Typescript</li>
-              <li>React</li>
-              <li>Next.js</li>
-              <li>Redux</li>
-              <li>styled-components</li>
-              <li>Typescript</li>
+              <Skill>HTML</Skill>
+              <Skill>CSS</Skill>
+              <Skill>Javascript</Skill>
+              <Skill>Typescript</Skill>
+              <Skill>React</Skill>
+              <Skill>Next.js</Skill>
+              <Skill>Redux</Skill>
+              <Skill>styled-components</Skill>
+              <Skill>Typescript</Skill>
             </ul>
           </div>
         </section>
