@@ -4,7 +4,7 @@ import Modal from "./Modal";
 import { useState } from "react";
 
 export default function Header(){
-    const [visibleModal, setVisibleModal] = useState(true);
+    const [visibleModal, setVisibleModal] = useState(false);
 
     const showModal = () => setVisibleModal(true);
     const hideModal = () => setVisibleModal(false);

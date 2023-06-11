@@ -13,8 +13,6 @@ const ModalButton = ({text, targetId}: {text: string; targetId: string}) => {
 export default function Modal({visible, hideModal}: {visible: boolean; hideModal: () => void}){
     const { t, lang } = useTranslation("client");
 
-    console.log(lang);
-
     return <div className={`w-screen fixed top-0 left-0 text-[1rem] h-64 z-10 bg-orange-500 flex flex-col justify-around items-center font-bold text-neutral-100 py-8 rounded-b-xl shadow-md transition-all ease-out ${visible ? "translate-y-0" : "-translate-y-full"}`}>
         <button type="button" className="absolute top-4 left-8 text-2xl" onClick={hideModal}>
             <IoIosArrowDropupCircle />

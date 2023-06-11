@@ -3,3 +3,50 @@
 @tailwind utilities;
 
 
+#icon {
+    animation: float 12s linear infinite alternate;
+}
+
+
+@keyframes float {
+    0%{
+        border-top-right-radius: 75px;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        transform: rotate(9deg) translateY(0px);
+    }
+
+    25%{
+        border-top-right-radius: 100px;
+        border-top-left-radius: 75px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        transform: rotate(9deg) translateY(-3px);
+    }
+
+    50% {
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 75px;
+        border-bottom-right-radius: 100px;
+        transform: rotate(9deg) translateY(-6px);
+    }
+
+    75% {
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 75px;
+        transform: rotate(9deg) translateY(-9px);
+    }
+
+    100%{
+        border-top-right-radius: 75px;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        transform: rotate(9deg) translateY(-12px);
+    }
+
+}
