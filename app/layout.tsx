@@ -11,7 +11,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
+    <html lang="en">
+      <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
       <body className='bg-neutral-100'>{children}</body>
     </html>
   )
