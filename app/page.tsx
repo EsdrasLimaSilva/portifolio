@@ -58,13 +58,13 @@ export default function Home(){
     <Section id="projects" classes="py-16">
       <h2 className="text-xl text-stone-800 font-semibold mb-4">{t('projects-title')}</h2>
       <ul className="w-full flex flex-row flex-wrap gap-4">
-        <Project title={t("project-1-title")} description={t('project-1-description')}githublink="https://github.com/EsdrasLimaSilva/aquarium" demolink="https://aquariumm.vercel.app/" />
+        <Project title={t("project-1-title")} description={t('project-1-description')}githublink="https://github.com/EsdrasLimaSilva/sisgo" demolink="https://aquariumm.vercel.app/" />
 
         <Project title={t("project-2-title")} description={t('project-2-description')}githublink="https://github.com/EsdrasLimaSilva/aquarium" demolink="https://aquariumm.vercel.app/" />
 
-        <Project title={t("project-3-title")} description={t('project-3-description')}githublink="https://github.com/EsdrasLimaSilva/aquarium" demolink="https://aquariumm.vercel.app/" />
+        <Project title={t("project-3-title")} description={t('project-3-description')}githublink="https://github.com/EsdrasLimaSilva/gaffy" demolink="https://gaffyy.netlify.app/" />
 
-        <Project title={t("project-4-title")} description={t('project-4-description')}githublink="https://github.com/EsdrasLimaSilva/aquarium" demolink="https://aquariumm.vercel.app/" />
+        <Project title={t("project-4-title")} description={t('project-4-description')}githublink="https://github.com/EsdrasLimaSilva/countinfo" demolink="https://countinfo.vercel.app/" />
 
       </ul>
     </Section>
