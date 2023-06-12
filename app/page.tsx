@@ -58,10 +58,14 @@ export default function Home(){
     <Section id="projects" classes="py-16">
       <h2 className="text-xl text-stone-800 font-semibold mb-4">{t('projects-title')}</h2>
       <ul className="w-full flex flex-row flex-wrap gap-4">
-        <Project title="Aquaritum" description="Share and listen to music. It was built with nextjs, typescript, Sanity.io and tailwindcss" githublink="https://github.com/EsdrasLimaSilva/aquarium" demolink="https://aquariumm.vercel.app/" />
-        <Project title="Sisgo" description="My personal blog about technology built with Nextjs, Typescript, SASS modules and Mongodb" githublink="https://github.com/EsdrasLimaSilva/aquarium" demolink="https://aquariumm.vercel.app/" />
-        <Project title="Gaffy" description="Find free games to play. This is a platform built with React and Tailwindcss, consuming the FreeToGame API" githublink="https://github.com/EsdrasLimaSilva/aquarium" demolink="https://aquariumm.vercel.app/" />
-        <Project title="Countinfo" description="Just a static website made from a challenge in FrontendMentor built with MaterialUI" githublink="https://github.com/EsdrasLimaSilva/aquarium" demolink="https://aquariumm.vercel.app/" />
+        <Project title={t("project-1-title")} description={t('project-1-description')}githublink="https://github.com/EsdrasLimaSilva/aquarium" demolink="https://aquariumm.vercel.app/" />
+
+        <Project title={t("project-2-title")} description={t('project-2-description')}githublink="https://github.com/EsdrasLimaSilva/aquarium" demolink="https://aquariumm.vercel.app/" />
+
+        <Project title={t("project-3-title")} description={t('project-3-description')}githublink="https://github.com/EsdrasLimaSilva/aquarium" demolink="https://aquariumm.vercel.app/" />
+
+        <Project title={t("project-4-title")} description={t('project-4-description')}githublink="https://github.com/EsdrasLimaSilva/aquarium" demolink="https://aquariumm.vercel.app/" />
+
       </ul>
     </Section>
   </main>

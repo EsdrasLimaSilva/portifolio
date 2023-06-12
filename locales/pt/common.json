@@ -5,5 +5,13 @@
     "about-content-2": "Me apaixonei por esse mundo de programação quando estava cursando Engenharia de Controle e Automação. Decidi abandonar o curso para buscar um foco para minha carreira, e foi aí que encontrei o desenvolvimento de interfaces, há aproximadamente 2 anos.",
     "about-content-3": "Desde então, tenho aprimorado minhas habilidaes em dar vida à interfaces lindas e funcionais.",
     "skills-title": "Habilidades",
-    "projects-title": "Projetos"
+    "projects-title": "Projetos",
+    "project-1-title": "Sisgo",
+    "project-1-description": "Meu blog pessoal sobre tecnolgia. Foi feito com Nextjs 13, Typescript, modulos SASS e Mongodb",
+    "project-2-title": "Aquarium",
+    "project-2-description": "Compartilhe e ouça músicas. Feito com Nextjs 12, Typescript, Sanity.io e Tailwdincss",
+    "project-3-title": "Gaffy",
+    "project-3-description": "Encontre jogos gratuitos para jogar. Foi desenvolvida com React e Tailwindcss, consumindo a API da FreeToGame",
+    "project-4-title": "Countinfo",
+    "project-4-description": "Apenas um site estático feito a partir de um desafio do FrontendMentor construído com MaterialUI"
 }

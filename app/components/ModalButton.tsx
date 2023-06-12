@@ -7,5 +7,5 @@ export default function ModalButton({text, targetId, hideModal}: {text: string; 
             hideModal();
     }
 
-    return <button type="button" className="hover:-translate-y-2 transition-all" onClick={goTo}>{text}</button>
+    return <button type="button" className="hover:-translate-y-[2px] transition-all" onClick={goTo}>{text}</button>
 }

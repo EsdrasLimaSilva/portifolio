@@ -5,5 +5,13 @@
     "about-content-2": "I fell in love with the world of programming while doing control and automation engineering. I decided to leave the course to seek a central focus of studies, and that's when I found front-end development about a year and a half ago.",
     "about-content-3": "Since then, I've been honing my skills in bringing beautiful and functional interfaces to life.",
     "skills-title": "Skills",
-    "projects-title": "Projects"
+    "projects-title": "Projects",
+    "project-1-title": "Sisgo",
+    "project-1-description": "My personal blog about technology built with Nextjs, Typescript, SASS modules and Mongodb",
+    "project-2-title": "Aquarium",
+    "project-2-description": "Share and listen to music. It was built with nextjs, typescript, Sanity.io and tailwindcss",
+    "project-3-title": "Gaffy",
+    "project-3-description": "Find free games to play. This is a platform built with React and Tailwindcss, consuming the FreeToGame API",
+    "project-4-title": "Countinfo",
+    "project-4-description": "Just a static website made from a challenge in FrontendMentor built with MaterialUI"
 }
