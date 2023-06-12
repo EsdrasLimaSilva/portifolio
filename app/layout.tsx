@@ -1,19 +1,24 @@
-import './globals.css'
+"use client";
 
+import TranslateProvider, {
+    TranslateContext,
+} from "@/contexts/translateContext";
+import "./globals.css";
 
-export const metadata = {
-  title: 'Portfolio',
-}
+import { useContext, useState } from "react";
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
-      <body className='bg-neutral-100'>{children}</body>
-    </html>
-  )
+    return (
+        <html lang="en">
+            <title>Esdras Silva</title>
+            <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
+            <body className="bg-neutral-100">
+                <TranslateProvider>{children}</TranslateProvider>
+            </body>
+        </html>
+    );
 }
