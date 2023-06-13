@@ -21,11 +21,14 @@ import {
     SiMongodb,
     SiMysql,
     SiFigma,
+    SiGithub,
+    SiLinkedin,
 } from "react-icons/si";
 import Project from "./components/Project";
 import { useContext } from "react";
 import { TranslateContext } from "@/contexts/translateContext";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
     const { dictionary: d, lang } = useContext(TranslateContext)!;
@@ -42,6 +45,24 @@ export default function Home() {
                             Esdras Silva
                         </h1>
                         <h2 className="text-gray-800">{d.profission}</h2>
+
+                        <div className="flex flex-row text-4xl text-blue-700 gap-2 justify-center mt-4 [&>a:hover]:text-blue-600">
+                            <Link
+                                href="https://github.com/EsdrasLimaSilva"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <SiGithub />
+                            </Link>
+
+                            <Link
+                                href="https://linkedin/in/esdras-silva-frontend"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <SiLinkedin />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </Section>
@@ -89,7 +110,7 @@ export default function Home() {
                         title={d["project-1-title"]}
                         description={d["project-1-description"]}
                         githublink="https://github.com/EsdrasLimaSilva/sisgo"
-                        demolink="https://aquariumm.vercel.app/"
+                        demolink="https://sisgo.vercel.app/"
                     />
 
                     <Project
