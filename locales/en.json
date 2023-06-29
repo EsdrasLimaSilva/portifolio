@@ -16,6 +16,6 @@
     "project-2-description": "Share and listen to music. It was built with nextjs, typescript, Sanity.io and tailwindcss",
     "project-3-title": "Gaffy",
     "project-3-description": "Find free games to play. This is a platform built with React and Tailwindcss, consuming the FreeToGame API",
-    "project-4-title": "Countinfo",
-    "project-4-description": "Just a static website made from a challenge in FrontendMentor built with MaterialUI"
+    "project-4-title": "Prodback",
+    "project-4-description": "A challenge from the Frontend Mentor website with Gury difficulty"
 }

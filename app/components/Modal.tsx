@@ -19,7 +19,7 @@ export default function Modal({
 
     return (
         <div
-            className={`w-screen fixed top-0 left-0 text-[1rem] h-64 z-20 bg-[#ffffff70] backdrop-blur-lg flex flex-col justify-around items-center font-bold text-blue-700 py-8 rounded-b-xl shadow-md transition-all ease-out ${
+            className={`w-screen fixed top-0 left-0 text-[1rem] h-64 z-20 bg-white  flex flex-col justify-around items-center font-bold text-blue-700 py-8 rounded-b-xl shadow-md transition-all ease-out ${
                 visible ? "translate-y-0" : "-translate-y-full"
             } md:fex md:flex-row md:translate-y-0 md:h-[56px] md:justify-center md:gap-8`}
         >
