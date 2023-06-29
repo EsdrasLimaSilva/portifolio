@@ -27,7 +27,6 @@ import {
 import Project from "./components/Project";
 import { useContext } from "react";
 import { TranslateContext } from "@/contexts/translateContext";
-import Head from "next/head";
 import Link from "next/link";
 
 export default function Home() {
@@ -130,8 +129,8 @@ export default function Home() {
                     <Project
                         title={d["project-4-title"]}
                         description={d["project-4-description"]}
-                        githublink="https://github.com/EsdrasLimaSilva/countinfo"
-                        demolink="https://countinfo.vercel.app/"
+                        githublink="https://github.com/EsdrasLimaSilva/prodback"
+                        demolink="https://prodback.vercel.app/"
                     />
                 </ul>
             </Section>
