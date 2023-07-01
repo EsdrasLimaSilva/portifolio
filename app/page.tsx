@@ -106,6 +106,13 @@ export default function Home() {
                 </h2>
                 <ul className="w-full flex flex-row flex-wrap gap-4">
                     <Project
+                        title={d["project-4-title"]}
+                        description={d["project-4-description"]}
+                        githublink="https://github.com/EsdrasLimaSilva/prodback"
+                        demolink="https://prodback.vercel.app/"
+                    />
+
+                    <Project
                         title={d["project-1-title"]}
                         description={d["project-1-description"]}
                         githublink="https://github.com/EsdrasLimaSilva/sisgo"
@@ -124,13 +131,6 @@ export default function Home() {
                         description={d["project-3-description"]}
                         githublink="https://github.com/EsdrasLimaSilva/gaffy"
                         demolink="https://gaffyy.netlify.app/"
-                    />
-
-                    <Project
-                        title={d["project-4-title"]}
-                        description={d["project-4-description"]}
-                        githublink="https://github.com/EsdrasLimaSilva/prodback"
-                        demolink="https://prodback.vercel.app/"
                     />
                 </ul>
             </Section>
