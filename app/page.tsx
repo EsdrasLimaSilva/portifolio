@@ -33,7 +33,7 @@ export default function Home() {
     const { dictionary: d, lang } = useContext(TranslateContext)!;
 
     return (
-        <main className="w-full max-w-3xl mx-auto">
+        <main className="w-full max-w-3xl mx-auto pb-80">
             <Section id="home">
                 <Header />
                 <div className="flex flex-col justify-center items-center h-[80vh] gap-8 md:flex-row">
