@@ -7,9 +7,11 @@ export default function Icon() {
 
     const showIcon = () => {
         const icon = iconRef.current;
+        console.log("loaded");
 
         if (icon) {
             icon.classList.remove("hidden-icon");
+            console.log("Hey");
         }
     };
 
