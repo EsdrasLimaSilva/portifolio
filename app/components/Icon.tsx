@@ -1,19 +1,17 @@
+"use client";
+
 import me from "@/app/assets/profile-me.png";
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Icon() {
     const iconRef = useRef<HTMLDivElement>(null);
 
-    const showIcon = () => {
+    useEffect(() => {
         const icon = iconRef.current;
-        console.log("loaded");
 
-        if (icon) {
-            icon.classList.remove("hidden-icon");
-            console.log("Hey");
-        }
-    };
+        if (icon) icon.classList.remove("hidden-icon");
+    }, [iconRef.current]);
 
     return (
         <div
@@ -25,7 +23,6 @@ export default function Icon() {
                 src={me}
                 alt="me"
                 className="absolute -bottom-4 -right-2 -rotate-[9deg]"
-                onLoad={showIcon}
             />
         </div>
     );
